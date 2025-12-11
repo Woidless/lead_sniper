@@ -1,0 +1,77 @@
+# .gitignore for lead_sniper
+# Purpose: ignore virtual envs, editor settings, caches, large/generated data and other local artifacts
+
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+## Virtual environments
+.venv/
+venv/
+env/
+ENV/
+venv.bak/
+
+## Packaging/build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+## Installer / dependency files
+Pipfile.lock
+
+## Pytest
+.pytest_cache/
+
+## Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+## Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+## Data (ignore generated/large/raw data folders)
+# Keep committed any curated sample files in `data/` if desired; ignore raw/outputs
+data/raw/
+data/output/
+data/*.xlsx
+data/*.xls
+data/*.db
+data/*.sqlite
+
+## Logs
+*.log
+logs/
+
+## Environment files
+.env
+.env.*
+
+## IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Local config / instance
+instance/
+.local/
+
+## Binary / compiled
+*.so
+*.dylib
+
+## Certificates and keys
+*.pem
+*.key
+
+# End of .gitignore
+
